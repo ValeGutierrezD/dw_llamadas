@@ -1,0 +1,29 @@
+{
+	"name": "ds_dim_tipo",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lsdwllamadas",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "bronze"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id_tipo",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "tipo",
+				"type": "char"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dim_tipo"
+		}
+	}
+}

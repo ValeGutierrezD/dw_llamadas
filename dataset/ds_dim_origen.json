@@ -1,0 +1,29 @@
+{
+	"name": "ds_dim_origen",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lsdwllamadas",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "bronze"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id_origen",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "numero_origen",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dim_origen"
+		}
+	}
+}
